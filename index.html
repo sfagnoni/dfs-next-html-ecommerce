@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tienda — Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}</style>
+  </head>
+  <body class="bg-gradient-to-b from-gray-50 via-white to-gray-100 text-gray-800">
+    <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-gradient-to-tr from-indigo-500 to-pink-500 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold">DF</div>
+        <span class="text-xl font-semibold">DFS Shop</span>
+      </a>
+      <nav class="flex items-center gap-6">
+        <input class="hidden md:inline-block border rounded-lg px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-indigo-300" placeholder="Buscar productos..." />
+        <a href="product.html" class="text-sm text-gray-600 hover:text-gray-900">Ofertas</a>
+        <a href="cart.html" class="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:shadow-lg">Carrito <span class="bg-white text-indigo-600 rounded-full px-2 py-0.5 text-xs font-semibold">3</span></a>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+      <section class="grid md:grid-cols-2 gap-8 items-center my-8">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Diseño moderno para tu estilo diario</h1>
+          <p class="mt-4 text-gray-600">Encuentra productos seleccionados con calidad premium, envíos rápidos y devoluciones sencillas.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#productos" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700">Ver productos</a>
+            <a href="#" class="inline-block px-6 py-3 border rounded-lg text-gray-700 hover:bg-gray-50">Suscríbete</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://picsum.photos/seed/hero/1200/720" alt="Hero" class="w-full h-72 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      <section id="productos" class="my-12">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold">Productos destacados</h2>
+          <a href="#" class="text-indigo-600 hover:underline">Ver todo</a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Product Card -->
+          <article class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
+            <a href="product.html" class="block rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/auriculares/800/480" alt="Producto 1" class="w-full h-48 object-cover" />
+            </a>
+            <div class="mt-4">
+              <h3 class="font-semibold">Auriculares inalámbricos</h3>
+              <p class="text-sm text-gray-500 mt-1">Sonido premium con cancelación de ruido</p>
+              <div class="mt-3 flex items-center justify-between">
+                <div class="font-bold">$129</div>
+                <button class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-sm">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
+            <a href="product.html" class="block rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/reloj/800/480" alt="Producto 2" class="w-full h-48 object-cover" />
+            </a>
+            <div class="mt-4">
+              <h3 class="font-semibold">Reloj minimalista</h3>
+              <p class="text-sm text-gray-500 mt-1">Diseño elegante y resistencia al agua</p>
+              <div class="mt-3 flex items-center justify-between">
+                <div class="font-bold">$199</div>
+                <button class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-sm">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
+            <a href="product.html" class="block rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/mochila/800/480" alt="Producto 3" class="w-full h-48 object-cover" />
+            </a>
+            <div class="mt-4">
+              <h3 class="font-semibold">Mochila urbana</h3>
+              <p class="text-sm text-gray-500 mt-1">Ligera, resistente y con organización interna</p>
+              <div class="mt-3 flex items-center justify-between">
+                <div class="font-bold">$89</div>
+                <button class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-sm">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
+            <a href="product.html" class="block rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/lampara/800/480" alt="Producto 4" class="w-full h-48 object-cover" />
+            </a>
+            <div class="mt-4">
+              <h3 class="font-semibold">Lámpara de diseño</h3>
+              <p class="text-sm text-gray-500 mt-1">Iluminación cálida con estilo contemporáneo</p>
+              <div class="mt-3 flex items-center justify-between">
+                <div class="font-bold">$59</div>
+                <button class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-sm">Añadir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="my-16 bg-gradient-to-r from-indigo-50 to-pink-50 rounded-3xl p-8 flex items-center gap-8">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold">Envío gratis en pedidos mayores a $99</h3>
+          <p class="mt-2 text-gray-600">Compra ahora y recibe ofertas exclusivas cada semana.</p>
+        </div>
+        <a href="#productos" class="bg-white px-6 py-3 rounded-lg shadow">Explorar colección</a>
+      </section>
+    </main>
+
+    <footer class="mt-20 border-t py-8">
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div class="text-sm text-gray-600">© 2025 DFS Shop. Todos los derechos reservados.</div>
+        <div class="flex gap-4 text-sm text-gray-600">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
