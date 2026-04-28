@@ -1,2 +1,2 @@
-# HTML template for an e-commerce to implement in nextJS
-Código HTML y CSS base para implementar un e-commerce
+# HTML template for an e-commerce
+HTML ans CSS code base to implement an e-commerce
